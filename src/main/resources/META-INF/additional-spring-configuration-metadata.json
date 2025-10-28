@@ -1,0 +1,14 @@
+{
+  "properties": [
+    {
+      "name": "spring.oracle.wallet.location",
+      "type": "java.lang.String",
+      "description": "A description for 'spring.oracle.wallet.location'"
+    },
+    {
+      "name": "spring.oracle.wallet.password",
+      "type": "java.lang.String",
+      "description": "A description for 'spring.oracle.wallet.password'"
+    }
+  ]
+}
