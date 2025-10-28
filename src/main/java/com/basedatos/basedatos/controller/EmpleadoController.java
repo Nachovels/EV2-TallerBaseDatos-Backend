@@ -1,8 +1,10 @@
 package com.basedatos.basedatos.controller;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -44,6 +46,11 @@ public class EmpleadoController {
 
     } catch (Exception e){
         return ResponseEntity.status(500).body("Error al actualizar sueldo: " + e.getMessage());
+        }
     }
+
+    @GetMapping
+    public List<Empleado> getAllEmpleados() {
+    return empleadoRepository.findAll();
 }
 }
